@@ -34,6 +34,12 @@ dependencies:
   get: ^4.6.5 # for state management
   google_fonts: ^5.1.0 #for custom fonts
   flutter_screenutil: ^5.8.4 #for managing screen and font size
+  intro_screen_onboarding_flutter: ^1.0.0
+  salomon_bottom_bar: ^3.3.2
+  firebase_core: ^2.15.0
+  firebase_auth: ^4.7.2
+  get_storage: ^2.1.1
+  cloud_firestore: ^4.8.4
 
 dev_dependencies:
   flutter_test:

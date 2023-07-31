@@ -14,7 +14,7 @@ Widget customButton(
       backgroundColor: AppColors.mandarinColor,
       foregroundColor: Colors.white,
       textStyle: TextStyle(
-        fontSize: 16.sp,
+        fontSize: 13.sp,
       ),
       padding: EdgeInsets.symmetric(horizontal: 30),
     ),
