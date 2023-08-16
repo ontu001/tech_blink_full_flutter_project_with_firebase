@@ -1,5 +1,7 @@
 import 'package:get/get_navigation/src/routes/get_route.dart';
 import 'package:get/get.dart';
+import 'package:tech_blink/business_logics/bindings/auth_binding.dart';
+import 'package:tech_blink/business_logics/bindings/splash_binding.dart';
 import 'package:tech_blink/ui/views/auth/login.dart';
 import 'package:tech_blink/ui/views/auth/registration.dart';
 import 'package:tech_blink/ui/views/auth/terms_conditions.dart';
@@ -38,6 +40,7 @@ page: () => Unknown(),
 GetPage(
 name: splash,
 page: () => Splash(),
+  binding: SplashBinding(),
 
 ),
   GetPage(
@@ -49,11 +52,13 @@ page: () => Splash(),
   GetPage(
     name: login,
     page: () => Login(),
+    binding: AuthBinding()
 
   ),
   GetPage(
     name: registration,
     page: () => Registration(),
+    binding: AuthBinding()
 
   ),
 
@@ -61,6 +66,7 @@ page: () => Splash(),
   GetPage(
     name: forgetpassword,
     page: () => ForgetPassword(),
+    binding: AuthBinding()
 
   ),
 

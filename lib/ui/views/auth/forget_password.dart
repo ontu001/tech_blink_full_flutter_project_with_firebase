@@ -5,6 +5,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 
+import '../../../business_logics/controllers/auth_controller.dart';
 import '../../../const/app_colors.dart';
 import '../../responsive/size_config.dart';
 import '../../route/route.dart';
@@ -55,7 +56,9 @@ class ForgetPassword extends StatelessWidget{
                     SizedBox(width: 180,height:35,child: customButton('Confirm', (){
 
                       if(_formKEy.currentState!.validate()){
-                        print('Success');
+                        Get.find<AuthController>().forgetPassword(
+                            _emailController.text.trim(),
+                            context);
                       }
                       else{
                         print('Failed');
